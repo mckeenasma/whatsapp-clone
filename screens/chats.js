@@ -23,7 +23,7 @@ export default class ChatScreen extends Component {
         // const navigation = useNavigation()
 
         const onClick = () => {
-            console.warn('Clicked me!')
+            console.warn('Barcelo\'s message in the messaging app!')
             // navigation.navigate('chatUI')
         }
         return (
