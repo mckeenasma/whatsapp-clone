@@ -13,6 +13,7 @@ import {
   ScrollableTab,
   TabHeading,
   Badge,
+
 } from 'native-base';
 import ChatsScreen from './screens/chats';
 import StatusScreen from './screens/status';
@@ -20,6 +21,8 @@ import CallsScreen from './screens/calls';
 import { StatusBar } from 'react-native';
 import appStyles from './appStyles';
 import SettingsScreen from './screens/settings';
+import HeaderComponent from './components/HeaderComponent';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -32,19 +35,7 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header noLeft style={appStyles.headerBackgroundColor}>
-          <Body>
-            <Title style={appStyles.appTitle}>WhatsApp</Title>
-          </Body>
-          <Right>
-            <Button icon transparent>
-              <Icon type="MaterialIcons" name="search" />
-            </Button>
-            <Button icon transparent>
-              <Icon type="MaterialIcons" name="more-vert" />
-            </Button>
-          </Right>
-        </Header>
+        <HeaderComponent />
         <Tabs
           tabContainerStyle={{
             elevation: 0,
