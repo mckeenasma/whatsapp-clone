@@ -11,6 +11,7 @@ import {
     Container,
     Fab,
     Icon,
+    Button,
 } from 'native-base';
 import { TouchableWithoutFeedback } from 'react-native'
 import appStyles from '../appStyles';
@@ -52,6 +53,7 @@ export default class ChatScreen extends Component {
                                 <Badge style={appStyles.badgeChats}>
                                     <Text style={appStyles.badgeTextChats}>1</Text>
                                 </Badge>
+
                             </Right>
                         </ListItem>
                     </TouchableWithoutFeedback>

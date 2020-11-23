@@ -1,6 +1,8 @@
 // Kani ang first inputs na buhaton if ever magbuhat ug react apps
 import React, { Component } from 'react';
 
+
+
 // then diri kay mga pre made na na components
 // ang component kay equivalent na siya sa div ug html
 import {
@@ -26,12 +28,14 @@ import CallsScreen from './screens/calls';
 import { StatusBar } from 'react-native';
 import appStyles from './appStyles';
 import SettingsScreen from './screens/settings';
+import { NavigationContainer } from '@react-navigation/native';
 
 // diri na mag sugod ang program
 export default class App extends Component {
   constructor(props) {
     super(props);
   }
+
   componentDidMount() {
     setTimeout(() => {
       StatusBar.setBackgroundColor('#075E54');
@@ -129,6 +133,7 @@ export default class App extends Component {
           </Tab>
         </Tabs>
       </Container>
+
     );
   }
 }
