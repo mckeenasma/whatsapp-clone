@@ -6,13 +6,21 @@ import AsyncStorage from '@react-native-community/async-storage'
 import { StyleSheet, TextInput, View, YellowBox, Button } from 'react-native'
 import * as firebase from 'firebase'
 import 'firebase/firestore'
-
+// expo install react-native-gifted-chat @react-native-community/async-storage firebase
 const firebaseConfig = {
-    //Your firebase config here
-}
+    apiKey: "AIzaSyCyZNdoMTX3QbLVPv61ghTGOySrZFT_-IQ",
+    authDomain: "react-native-chat-clone.firebaseapp.com",
+    databaseURL: "https://react-native-chat-clone.firebaseio.com",
+    projectId: "react-native-chat-clone",
+    storageBucket: "react-native-chat-clone.appspot.com",
+    messagingSenderId: "46662215093",
+    appId: "1:46662215093:web:f388eceaaf95a66238a5fc",
+    measurementId: "G-GXMJ24FSFC"
+};
 
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig)
+    // firebase.analytics();
 }
 
 YellowBox.ignoreWarnings(['Setting a timer for a long period of time'])
